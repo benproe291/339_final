@@ -115,7 +115,7 @@ img {
   }
 
   #gallery {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .sample:last-child {
@@ -132,6 +132,10 @@ img {
 
   .sample {
     background-color: #000;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 2.5px;
+    border-right: 2.5px;
   }
 
 
