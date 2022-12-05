@@ -45,7 +45,9 @@ img {
   height: 100%;
   background-color: #ffffff;
 }
-
+iframe {
+  display: none;
+}
 /* Tablet format, optimized for tap inputs */
 @media screen and (min-width: 800px) {
   #gallery {
@@ -84,7 +86,7 @@ img {
   #displayFacts {
     display: grid;
     height: 250px;
-  
+    justify-items: center;
   }
 
 
@@ -110,6 +112,10 @@ img {
 
   #gallery {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sample:last-child {
+    grid-column: inherit;
   }
 
   .player {
