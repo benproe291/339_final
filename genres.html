@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="skip"><a href="#gallery">Skip to Main Content</a></div>
+    <a class="skip" href="#main">Skip to Main Content</a>
     <header>
         <h1>Electronic Dance Music</h1>
         <nav>
@@ -28,20 +28,24 @@
         <h1>Overview of Common EDM Subgenres</h1>
         <p style="text-align: center">EDM or Electronic Dance Music is a collection of genres that has evolved from eachother and other genres of music. EDM is the broad term to describe music that anything electronic, however people who often listen to any kind of EDM usually have a particular subgenre they favor other the others. </br>Below are a few artists that represent their subgenre.
         </p>
-        <div id="display">
-            Hover over an image below to display the image and the alt text.
+        <div id="displayImg">
+            <span></span>
         </div>
+        <div id='imgName'>Hover over an image below to display the image and the alt text.</div>
+        <div id="imgDesc"></div>
 
         <div id="gallery">
             <div id="sample">
                 <img class="thumbnail" tabindex="0" alt="Subtronics // Dubstep"
-                    src="https://edmmaniac.com/wp-content/uploads/2022/01/subtronics-fracals-800x500.jpeg" />
+                    src="https://edmmaniac.com/wp-content/uploads/2022/01/subtronics-fracals-800x500.jpeg" 
+                    data-price ="The overall sound of a dubstep track is described as tightly coiled productions with
+                    overwhelming bass lines and reverberant drum patterns, clipped samples, and occasional vocals."
+                    />
                 <div class="description">
                     <h2>Dubstep</h2>
                     <h3>Artist Pictured: Subtronics</h3>
                     <p>The overall sound of a dubstep track is described as "tightly coiled productions with
-                        overwhelming bass lines and reverberant drum patterns, clipped samples, and occasional vocals."
-                        </br> </p> <a href="https://www.allmusic.com/style/dubstep-ma0000004465?1670182034086">Click to
+                        overwhelming bass lines and reverberant drum patterns, clipped samples, and occasional vocals."</p> <a href="https://www.allmusic.com/style/dubstep-ma0000004465?1670182034086">Click to
                         visit www.AllMusic.com for more info</a>
                 </div>
                 <iframe style="border-radius: 12px"
@@ -203,7 +207,7 @@
             </div>
         </div>
     </main>
-    <script src="js/genres.js"></script>
+    <script class="display" src="js/genres.js"></script>
 </body>
 
 </html>

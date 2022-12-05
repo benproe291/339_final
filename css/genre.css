@@ -1,78 +1,87 @@
-body{
-	margin: 2%;
-	/* border: 1px solid black; */
-	background-color: #c0c0c0;
+body {
+  /* margin: 2%; */
+  /* border: 1px solid black; */
+  background-color: #c0c0c0;
 }
-main, header, a{
-    font-family: Helvetica, Arial, sans-serif;
-
+main,
+header,
+a {
+  font-family: Helvetica, Arial, sans-serif;
 }
-#display{
-    display: none;
-}
-
-.thumbnail{
-	width:85%;
-	/* border: 10px solid black; */
+#display,
+#imgName,
+#imgDesc {
+  display: none;
 }
 
-#gallery, .description, #sample{
-	display: grid;
-    justify-items: center;
+.thumbnail {
+  width: 85%;
+  /* border: 10px solid black; */
+}
+
+#gallery,
+.description,
+#sample {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 2% 2% 2% 2%;
+}
+img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+
+#sample {
+  display: grid;
+  justify-items: center;
+  border: 5px solid #000;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* Tablet format, optimized for tap inputs */
+@media screen and (min-width: 800px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #displayImg {
+    display: flex;
+    width: 388px;
+    height: 325px;
     align-items: center;
-    align-content: center;
-    padding: 2% 2% 2% 2%;
-}
-img{
-	width:450px;
-    height: 450px;
-    object-fit: cover;
-}
-h1{
-	text-align: center;
-    font-size:xx-large
-}
-h2{
-    font-size: x-large;
-}
-h3{
-    font-size: large;
-}
+    justify-content: space-around;
+    text-align: center;
+    border: 5px solid black;
+    margin: 0 auto;
+    padding: 0px 10px;
+    color: #ffffff;
+    background-color: #6e3dff;
+    background-size: 100%;
+    margin-bottom: 25px;
+    font-size: 150%;
+    object-fit: inherit;
+    background-size: cover;
 
-#sample{
-    display: grid;
-    justify-items: center;
-    border: 5px solid #000;
-    background-color: #FFFFFF;
-}
+    /*For when the image appears*/
+    background-repeat: no-repeat;
+  }
 
+  #imgName {
+    text-align: center;
+  }
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-
-@media screen and (min-width:800px) {
-    #display{
-        display: flex;
-        width: 388px;
-        height: 325px;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        border:5px solid black;
-        margin:0 auto;
-        padding: 0px 10px;
-        color:#FFFFFF;
-        background-color: #6E3DFF;
-        background-size: 100%;
-        margin-bottom:25px;
-        font-size:150%;
-        object-fit: inherit;
-    
-        /*For when the image appears*/
-        background-repeat: no-repeat;
-    }  
-
-
-    #gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
+  .description,
+  .player {
+    display: none;
+  }
 }

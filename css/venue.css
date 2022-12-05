@@ -1,0 +1,7 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2.5%;
+    margin-top: 10px;
+}
