@@ -15,7 +15,6 @@
 
 .card {
   display: flex;
-  background-color: #0ff;
   width: 95%;
   justify-content: center;
   flex-direction: column;
@@ -24,8 +23,20 @@
   border: #000 5px solid;
 }
 
+.card:nth-child(even){
+  background-color: white;
+  color: #000;
+}
+.card:nth-child(odd){
+  background-color: black;
+  color: white;
+}
 .card > img {
   width: 90%;
+}
+
+body{
+  background-color: #000;
 }
 
 .card > table {
@@ -36,10 +47,14 @@ th {
   text-align: right;
 }
 
+table{
+    font-size:small;
+}
+
 @media screen and (min-width: 800px) {
     .card:nth-child(1), .card:nth-child(8){
         font-family:"VT323", monospace;
-        columns: 1/-1;
+        width: 100%;
     }
   .card:nth-child(odd){
     background-color: white;
@@ -57,10 +72,21 @@ th {
   }
   .card{
     width: 45%;
+    justify-content: space-evenly;
   }
   img{
     width: 330px;
-    height: 175px;
+    height: 225px;
     object-fit: cover;
   }
+}
+
+@media screen and (min-width: 1200px) {
+    .card{
+        width: 30%;
+        min-height: 300px;
+    }
+    .card:nth-child(1), .card:nth-child(8){
+        min-height: inherit;
+    }
 }

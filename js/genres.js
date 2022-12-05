@@ -8,7 +8,8 @@ for (var index = 0; index < thumbnails.length; index++) {
     document.querySelector('#displayImg').style.backgroundImage =
       "url('" + this.src + "')"
     document.querySelector('#imgName').innerHTML = this.alt
-    document.querySelector('#imgDesc').innerHTML = this.data-price
+    document.querySelector('#imgDesc').innerHTML = this.dataset.price
+    document.querySelector('#imgPlayer').innerHTML = this.dataset.embed
   })
   // thumbnails[index].addEventListener('mouseleave', function () {
   //   document.querySelector('#displayImg').style.backgroundImage = 'none'
