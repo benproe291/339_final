@@ -1,7 +1,66 @@
 .intro {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2.5%;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2.5%;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  background-color: #0ff;
+  width: 95%;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: #000 5px solid;
+}
+
+.card > img {
+  width: 90%;
+}
+
+.card > table {
+  width: 100%;
+}
+
+th {
+  text-align: right;
+}
+
+@media screen and (min-width: 800px) {
+    .card:nth-child(1), .card:nth-child(8){
+        font-family:"VT323", monospace;
+        columns: 1/-1;
+    }
+  .card:nth-child(odd){
+    background-color: white;
+    color: #000;
+  }
+  .card:nth-child(even){
+    background-color: black;
+    color: white;
+  }
+  .gallery{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .card{
+    width: 45%;
+  }
+  img{
+    width: 330px;
+    height: 175px;
+    object-fit: cover;
+  }
 }
