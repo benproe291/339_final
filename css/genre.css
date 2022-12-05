@@ -45,7 +45,7 @@ img {
   height: 100%;
   background-color: #ffffff;
 }
-iframe {
+#displayFacts iframe {
   display: none;
 }
 /* Tablet format, optimized for tap inputs */
@@ -57,6 +57,10 @@ iframe {
 
   .sample:last-child {
     grid-column: 1/-1;
+  }
+
+  iframe {
+    display: block;
   }
 }
 
@@ -136,9 +140,8 @@ iframe {
     grid-column: initial;
   }
 
-  iframe {
+  #displayFacts iframe {
     display: block;
-
   }
 }
 
