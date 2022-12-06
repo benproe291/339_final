@@ -172,6 +172,6 @@ footer{
   }
 }
 
-*:focus, *:active {
+*:focus {
   border: #FFF dashed 4px;
 }
