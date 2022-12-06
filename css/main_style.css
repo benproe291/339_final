@@ -172,6 +172,6 @@ footer{
   }
 }
 
-*:focus {
+*:focus, *:focus-visible, div:focus-visible {
   border: #FFF dashed 4px;
 }
