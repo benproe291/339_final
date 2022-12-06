@@ -131,6 +131,8 @@ footer{
   text-align: center;
   padding: 10px;
 }
+
+
 @media screen and (min-width: 800px) {
   header {
     display: block;
@@ -139,7 +141,6 @@ footer{
   nav ul {
     display: flex;
     justify-content: space-evenly;
-    /* text-decoration: dashed; */
   }
 }
 @media screen and (min-width: 1200px) {
@@ -171,6 +172,6 @@ footer{
   }
 }
 
-*:focus {
+*:focus, *:active {
   border: #FFF dashed 4px;
 }

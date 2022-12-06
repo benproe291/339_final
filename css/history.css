@@ -9,10 +9,11 @@
     margin:2.5%
 }
 
-.section{
+.section, .section > h1{
     border: 5px black solid;
     padding: 1%;
     background-color: #FFF;
+    color: #000;
 }
 
 p, h2, h3 {
